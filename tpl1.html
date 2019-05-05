@@ -1,0 +1,15 @@
+<!--声明变量赋值给那个html模板文件-->
+{% extends 'master.html' %}
+
+{% block title %}用户管理{% endblock %}
+{% block content %}
+    <h1>用户列表</h1>
+    <ul>
+        {% for row in user_list %}
+            <li>{{ row}}</li>
+        {% endfor %}
+    </ul>
+
+    <!--导入其它的模板文件-->
+    {% include 'contains.html' %}
+{% endblock %}
