@@ -1,1 +1,1 @@
-# django_template_inheritance
+django模板继承
